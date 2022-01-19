@@ -27,5 +27,5 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/imDQOsU.gif)
+![](https://i.imgur.com/CuWybTz.gif)
 > 預報不準的原因在於影響天氣的因素太多、太複雜，儘管人類不斷從軟體與硬體改進電腦模式計算的結果，仍無法達到很好的準確度
