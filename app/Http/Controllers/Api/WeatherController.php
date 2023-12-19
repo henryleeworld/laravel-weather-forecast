@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 
 class WeatherController extends Controller
 {
-    public function __invoke($city)
+    public function __invoke(string $city): mixed
     {
         $coordinates = config('frontend.cities.'.$city);
 
