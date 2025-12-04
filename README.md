@@ -1,4 +1,4 @@
-# Laravel 11 天氣預報
+# Laravel 12 天氣預報
 
 天氣預報是先利用工具觀測大氣的各種資料，輸入電腦進行複雜運算，再由專業人員根據電腦運算的結果進行修正。
 
@@ -20,6 +20,14 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
 - 完成註冊後，可以經由 `/login` 來進行登入。
@@ -27,5 +35,5 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/e4wdQVq.gif)
+![](https://i.imgur.com/7TdxkF7.gif)
 > 預報不準的原因在於影響天氣的因素太多、太複雜，儘管人類不斷從軟體與硬體改進電腦模式計算的結果，仍無法達到很好的準確度

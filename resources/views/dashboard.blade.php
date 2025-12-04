@@ -1,13 +1,13 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="text-xl font-semibold leading-tight text-gray-800">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Upcoming weather') }}
         </h2>
     </x-slot>
 
     <div class="py-12">
-        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div x-data="weather()"
                      class="p-6 bg-white border-b border-gray-200">
                     <div class="flex items-center">
@@ -15,7 +15,7 @@
                                 class="flex-1 ml-4 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                             <option value="">-- {{ __('Select city') }} --</option>
                             @foreach(config('weather.cities') as $key => $name)
-                                <option value="{{ $key }}">{{ Str::title($key) }}</option>
+                                <option value="{{ $key }}">{{ __(Str::title($key)) }}</option>
                             @endforeach
                         </select>
                     </div>
